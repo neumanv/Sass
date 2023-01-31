@@ -1,0 +1,69 @@
+//MIXINS
+@mixin modo-oscuro{
+    background-color: $negro;
+    color: #eee;
+}
+
+@mixin borde{
+    border: 2px - 1 solid $fondo-cont;
+}
+
+@mixin centro{
+    text-align: center;
+}
+
+@mixin sinmargen{
+    margin: 0;
+}
+
+@mixin margen_lateral($lat){
+    margin: 0 $lat;
+}
+
+@mixin raton{
+    cursor: progress;
+}
+
+//FUNCTIONS
+@function padding($padding){
+    @return $padding * 2;
+}
+
+@function cuadrado($pxs...){
+    $sum: 0px;
+
+    @each $px in $pxs{
+        $sum: $sum + $px;
+    }
+
+    @return $sum;
+}
+
+@function border-radius($border){
+    @return $border * 2;
+}
+
+@function nada($num){
+    @return $num * 0;
+}
+
+@for $i from 1 to 12{
+    li:nth-child(#{$i}){
+        font-size: 10px + $i;
+        margin-left: 1% + $i;
+    }
+}
+
+@for  $i from 1 through 9{
+    span:nth-child(#{$i}){
+        order: $i;
+        color: rgb(115, 129, 208);
+    }
+}
+
+@while $x < 11 {
+    .last-#{$x} {
+        font-size: #{5*$x}px;
+    }
+    $x: $x + 1;
+}

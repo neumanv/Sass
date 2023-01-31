@@ -1,0 +1,85 @@
+@import "funciones";
+
+//VARIABLES
+$fondo: #cdcdcd;
+$titulo: #b94275;
+$letra-general: 'Trebuchet MS';
+$fondo-cont: #ffffff;
+$leer: #888888;
+$rojo: #ff0000;
+$negro: #111;
+$azul: #0015ff;
+
+//ESTILOS
+
+body{
+    background-color: $fondo;
+    font-family: $letra-general;
+    cursor: help;
+    @include sinmargen();
+    h1{
+        color: $titulo;
+        @include centro();
+    }
+    hr{
+        @include margen_lateral(3rem);
+    }
+}
+
+.card{
+    text-align: center;
+    padding: 1em - 0;
+    margin: 3% 25%;
+    border-radius: 2rem - 1rem;
+    background-color: $fondo-cont;
+    .texto{
+        color: $leer;
+        a{
+            text-decoration: none;
+            &:hover{
+                color: $rojo;
+                text-decoration: underline;
+            }
+        }
+    }
+    &:hover{
+        @include modo-oscuro();
+    }
+    img{
+        width: 50% * 2;
+        border-radius: border-radius(3.5rem);
+        &:hover{
+            @include borde();
+            @include raton;
+        }
+    }
+}
+
+.container{
+    background-color: $fondo-cont;
+    margin: nada(0);
+    padding: padding(20px);
+    @include centro;
+    &{
+        color: $titulo;
+    }
+    .cuadrado{
+        background-color: $rojo;
+        width: cuadrado(20px, 112px, 50px);
+        height: cuadrado(30px, 5px, 10px, 20px, 70px, 45px);
+        &:hover{
+            background-color: $azul;
+            @include raton;
+        }
+    }
+    .circulo{
+        background-color: $negro;
+        width: cuadrado(20px, 112px, 50px);
+        height: cuadrado(30px, 5px, 10px, 20px, 70px, 45px);
+        border-radius: 100%;
+        margin-left: 23%;
+        &:hover{
+            cursor: crosshair;
+        }
+    }
+}

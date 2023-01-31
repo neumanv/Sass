@@ -1,0 +1,234 @@
+li:nth-child(1) {
+  font-size: 11px;
+  margin-left: 2%;
+}
+
+li:nth-child(2) {
+  font-size: 12px;
+  margin-left: 3%;
+}
+
+li:nth-child(3) {
+  font-size: 13px;
+  margin-left: 4%;
+}
+
+li:nth-child(4) {
+  font-size: 14px;
+  margin-left: 5%;
+}
+
+li:nth-child(5) {
+  font-size: 15px;
+  margin-left: 6%;
+}
+
+li:nth-child(6) {
+  font-size: 16px;
+  margin-left: 7%;
+}
+
+li:nth-child(7) {
+  font-size: 17px;
+  margin-left: 8%;
+}
+
+li:nth-child(8) {
+  font-size: 18px;
+  margin-left: 9%;
+}
+
+li:nth-child(9) {
+  font-size: 19px;
+  margin-left: 10%;
+}
+
+li:nth-child(10) {
+  font-size: 20px;
+  margin-left: 11%;
+}
+
+li:nth-child(11) {
+  font-size: 21px;
+  margin-left: 12%;
+}
+
+span:nth-child(1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(5) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(6) {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(7) {
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(8) {
+  -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8;
+  color: rgb(115, 129, 208);
+}
+
+span:nth-child(9) {
+  -webkit-box-ordinal-group: 10;
+      -ms-flex-order: 9;
+          order: 9;
+  color: rgb(115, 129, 208);
+}
+
+.block {
+  background-color: blue;
+}
+
+.last-1 {
+  font-size: 5px;
+}
+
+.last-2 {
+  font-size: 10px;
+}
+
+.last-3 {
+  font-size: 15px;
+}
+
+.last-4 {
+  font-size: 20px;
+}
+
+.last-5 {
+  font-size: 25px;
+}
+
+.last-6 {
+  font-size: 30px;
+}
+
+.last-7 {
+  font-size: 35px;
+}
+
+.last-8 {
+  font-size: 40px;
+}
+
+.last-9 {
+  font-size: 45px;
+}
+
+.last-10 {
+  font-size: 50px;
+}
+
+body {
+  background-color: #cdcdcd;
+  font-family: "Trebuchet MS";
+  cursor: help;
+  margin: 0;
+}
+body h1 {
+  color: #b94275;
+  text-align: center;
+}
+body hr {
+  margin: 0 3rem;
+}
+
+.card {
+  text-align: center;
+  padding: 1em;
+  margin: 3% 25%;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+.card .texto {
+  color: #888888;
+}
+.card .texto a {
+  text-decoration: none;
+}
+.card .texto a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+.card:hover {
+  background-color: #111;
+  color: #eee;
+}
+.card img {
+  width: 100%;
+  border-radius: 7rem;
+}
+.card img:hover {
+  border: 1px solid #ffffff;
+  cursor: progress;
+}
+
+.container {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+.container {
+  color: #b94275;
+}
+.container .cuadrado {
+  background-color: #ff0000;
+  width: 182px;
+  height: 180px;
+}
+.container .cuadrado:hover {
+  background-color: #0015ff;
+  cursor: progress;
+}
+.container .circulo {
+  background-color: #111;
+  width: 182px;
+  height: 180px;
+  border-radius: 100%;
+  margin-left: 23%;
+}
+.container .circulo:hover {
+  cursor: crosshair;
+}
